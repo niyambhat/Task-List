@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="col s12">
+        <div id="main" class="card">
+          <div class="card-content">
+            <span class="card-title">Task List</span>
+            <div class="row">
+              <form id="taskForm">
+                <div class="input-field col s6">
+                  <input
+                    placeholder="Ex. Do Laundery"
+                    id="taskInput"
+                    type="text"
+                    class="validate"
+                  />
+                  <label for="taskInput">New Task</label>
+                  <input
+                    type="submit"
+                    value="Add Task"
+                    class="btn"
+                    id="submitTask"
+                  />
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="card-action">
+            <h5 id="title">Tasks</h5>
+            <div class="input-field col s6">
+              <input type="text" name="filter" id="filter" />
+              <label for="filter">Filter Tasks</label>
+            </div>
+
+            <ul class="collection" id="collection"></ul>
+            <a href="#" class="clearTasks btn black">Clear Tasks</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="action.js"></script>
+    <script
+      src="https://kit.fontawesome.com/7aa5b4f332.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
